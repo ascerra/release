@@ -56,4 +56,4 @@ zz_generated_metadata:
   branch: main
   org: stolostron
   repo: acmqe-autotest
-  variant: acm-ocp4.12-lp-interop-test-operator-install
+  variant: acm-ocp4.12-lp-interop-test-acm-install

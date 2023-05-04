@@ -93,10 +93,10 @@ periodics:
   labels:
     ci-operator.openshift.io/cloud: aws
     ci-operator.openshift.io/cloud-cluster-profile: aws-cspi-qe
-    ci-operator.openshift.io/variant: acm-ocp4.12-lp-interop-test-operator-install
+    ci-operator.openshift.io/variant: acm-ocp4.12-lp-interop-test-acm-install
     ci.openshift.io/generator: prowgen
     pj-rehearse.openshift.io/can-be-rehearsed: "true"
-  name: periodic-ci-stolostron-acmqe-autotest-main-acm-ocp4.12-lp-interop-test-operator-install-acm-ascerra-cluster-spin
+  name: periodic-ci-stolostron-acmqe-autotest-main-acm-ocp4.12-lp-interop-test-acm-install-acm-ascerra-cluster-spin
   spec:
     containers:
     - args:
@@ -108,7 +108,7 @@ periodics:
       - --secret-dir=/secrets/ci-pull-credentials
       - --secret-dir=/usr/local/acm-ascerra-cluster-spin-cluster-profile
       - --target=acm-ascerra-cluster-spin
-      - --variant=acm-ocp4.12-lp-interop-test-operator-install
+      - --variant=acm-ocp4.12-lp-interop-test-acm-install
       command:
       - ci-operator
       image: ci-operator:latest
